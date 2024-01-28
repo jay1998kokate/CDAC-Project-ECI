@@ -1,0 +1,1356 @@
+{
+	"info": {
+		"_postman_id": "1c70ee23-87bf-46aa-822f-194b45032710",
+		"name": "Project_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nitin@gmail.com\",\r\n    \"password\": \"11111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nitin1@gmail.com\",\r\n    \"password\": \"1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/forgotPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"suraj@gmail.com\",\r\n    \"password\": \"3333\",\r\n    \"phone\": \"9987998712\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assembly",
+			"item": [
+				{
+					"name": "searchVoterByAssemblyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/assemblyInfo/searchVoterByAssemblyId/2001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyInfo",
+								"searchVoterByAssemblyId",
+								"2001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAssemblyById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/assemblyInfo/assembly/2001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyInfo",
+								"assembly",
+								"2001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByAssemblyName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/assemblyInfo/assemblyName/Vadgaon-Sheri",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyInfo",
+								"assemblyName",
+								"Vadgaon-Sheri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAllAssemblies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Ajay\",\r\n    \"middleName\": \"Vitthal\",\r\n    \"lastName\": \"Ingale\",\r\n    \"dateOfBirth\": \"1999-12-22\",\r\n    \"age\": 22,\r\n    \"gender\": \"M\",\r\n    \"uid\": \"4567\",\r\n    \"pan\": \"PAN15\",\r\n    \"uniqueId\": 103 ,\r\n    \"state\": \"Maharashtra\",\r\n    \"district\":\"Pune\",\r\n    \"taluka\":\"Junnar\",\r\n    \"village\":\"Narayangaon\",\r\n    \"pincode\": \"333525\",\r\n    \"assemblyId\":2001,\r\n    \"parlimentId\":5001,\r\n    \"uidDoc\":\"1234\",\r\n    \"panDoc\":\"4567\",\r\n    \"photo\":\"ajay.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voter/registerVoter/personalInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voter",
+								"registerVoter",
+								"personalInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAssembliesByParliamentId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/assemblyInfo/parliament/5001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyInfo",
+								"parliament",
+								"5001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAssembliesByParliamentName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/assemblyInfo/parliamentName/Pune",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyInfo",
+								"parliamentName",
+								"Pune"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addAssembly",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"state\": \"Maharashtra\",\r\n    \"notation\": \"MH\",\r\n    \"district\": \"Pune\",\r\n    \"assemblyName\": \"Shirur\",\r\n    \"parliamentId\": 5001\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/assemblyInfo/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyInfo",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Complaint",
+			"item": [
+				{
+					"name": "registerComplaint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"assemblyId\":\"2002\",\r\n    \"complaintDesc\":\"Complaint 3 ...\",\r\n    \"status\":\"pending\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/complaint",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"complaint"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateComplaint",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"complaintId\": 1,\r\n    \"assemblyId\":2001,\r\n    \"complaintDesc\":\"Complaint...\",\r\n    \"status\":\"success\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/complaint",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"complaint"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllComplaints",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/complaint",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"complaint"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getComplaintsByAssemblyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/complaint/getComplaintsByAssembyId/2001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"complaint",
+								"getComplaintsByAssembyId",
+								"2001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getComplaintsByStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/complaint/getComplaintsByStatus/pending",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"complaint",
+								"getComplaintsByStatus",
+								"pending"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getComplaintsByParliamentId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/complaint/getComplaintsByParliamentId/5002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"complaint",
+								"getComplaintsByParliamentId",
+								"5002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AssemblyResult",
+			"item": [
+				{
+					"name": "insertResult",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assemblyId\": 2001,\r\n    \"winningCandidateId\":1,\r\n    \"electionId\":102\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/assemblyResult",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyResult"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWinningCandidateByAssemblyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/assemblyResult/getWinningCandidateByAssemblyId/2001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyResult",
+								"getWinningCandidateByAssemblyId",
+								"2001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PoliticalParty",
+			"item": [
+				{
+					"name": "registerPoliticalParty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"politicalPartyName\":\"BJP\",\r\n    \"presidentName\":\"Narendra Modi\",\r\n    \"state\": \"Maharashtra\",\r\n    \"district\":\"Delhi\",\r\n    \"partySymbol\":\"Kamal\",\r\n\t\"politicalPartyAddress\":\"Delhi\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/politicalParty/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"politicalParty",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPoliticalPartyByName",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/politicalParty/partyByname/Ncp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"politicalParty",
+								"partyByname",
+								"Ncp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPoliticalParty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/politicalParty/201",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"politicalParty",
+								"201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllParties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePoliticalParty",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"politicalPartyId\": 202,\r\n    \"politicalPartyName\":\"Ncp\",\r\n    \"presidentName\":\"Sharad Pawar\",\r\n    \"state\": \"Mumbai\",\r\n    \"district\":\"Delhi\",\r\n    \"partySymbol\":\"Clock\",\r\n\t\"politicalPartyAddress\":\"Delhi\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/politicalParty/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"politicalParty",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Election",
+			"item": [
+				{
+					"name": "getElectionById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/election/electionById/101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"election",
+								"electionById",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllElections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/election/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"election",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getElectionByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/election/electionByName/Assembly2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"election",
+								"electionByName",
+								"Assembly2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addElectionDetails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"electionName\": \"Assembly2\",\r\n        \"year\": 2032,\r\n        \"electionDate\": \"2032-08-23\",\r\n        \"resultDate\": \"2032-09-15\",\r\n        \"state\": \"Maharashtra\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/election",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"election"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Voter",
+			"item": [
+				{
+					"name": "addVoterInfo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Aditya\",\r\n    \"middleName\": \"Vitthal\",\r\n    \"lastName\": \"Ingale\",\r\n    \"dateOfBirth\": \"1999-12-22\",\r\n    \"age\": 22,\r\n    \"gender\": \"M\",\r\n    \"uid\": \"4567\",\r\n    \"pan\": \"PAN15\",\r\n    \"uniqueId\": 110 ,\r\n    \"state\": \"Maharashtra\",\r\n    \"district\":\"Pune\",\r\n    \"taluka\":\"Junnar\",\r\n    \"village\":\"Narayangaon\",\r\n    \"pincode\": \"333525\",\r\n    \"assemblyId\":2001,\r\n    \"parlimentId\":5001,\r\n    \"uidDoc\":\"1234\",\r\n    \"panDoc\":\"4567\",\r\n    \"photo\":\"ajay.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voter/registerVoter/personalInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voter",
+								"registerVoter",
+								"personalInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVoter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/voter/Search/VoterId/1001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voter",
+								"Search",
+								"VoterId",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateVoter",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Suraj\",\r\n    \"middleName\": \"Pramod\",\r\n    \"lastName\": \"Kapse\",\r\n    \"dateOfBirth\": \"1999-12-22\",\r\n    \"age\": 21,\r\n    \"gender\": \"M\",\r\n    \"uid\": \"123545\",\r\n    \"pan\": \"PAN14\",\r\n    \"uniqueId\": 103\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voter/updateVoter/personalInfo/1003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voter",
+								"updateVoter",
+								"personalInfo",
+								"1003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateVoterAddress",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"state\": \"Maharashtra\",\r\n        \"district\": \"Pune\",\r\n        \"taluka\": \"Haveli\",\r\n        \"village\": \"Hadpsar\",\r\n        \"pincode\": \"411014\",\r\n        \"assemblyId\": 2001,\r\n        \"voterId\": 1001\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voter/updateVoter/addressInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voter",
+								"updateVoter",
+								"addressInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateVoterAddress",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"uidDoc\": \"1111\",\r\n        \"panDoc\": \"4567\",\r\n        \"photo\": \"7895\",\r\n         \"voterId\": 1001\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voter/updateVoter/documentInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voter",
+								"updateVoter",
+								"documentInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByUniqueId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/101",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"101"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Candidate",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assemblyId\": 2002,\r\n    \"parliamentId\": 5002,\r\n    \"politicalParyId\": 202,\r\n    \"electionId\": 103,\r\n    \"criminalDetails\": \"No\",\r\n    \"incomeDetails\": \"250000\",\r\n    \"voterId\": 1004\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/candidate/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidate",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByAssembly",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/assemblyCandidate/getCandidateByAssembly/2002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assemblyCandidate",
+								"getCandidateByAssembly",
+								"2002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByAssemblyAndElection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/candidate/getCandidateByAssemblyAndElection/2002/103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidate",
+								"getCandidateByAssemblyAndElection",
+								"2002",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByPoliticalParty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/candidate/getCandidateByPoliticalParty/201",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidate",
+								"getCandidateByPoliticalParty",
+								"201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByPoliticalPartyAndElection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/candidate/getCandidateByPoliticalPartyAndElection/201/102",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidate",
+								"getCandidateByPoliticalPartyAndElection",
+								"201",
+								"102"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCandidate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"candidateId\": 4,\r\n    \"assemblyId\": 2002,\r\n    \"parliamentId\": 5001,\r\n    \"politicalParyId\": 202,\r\n    \"electionId\": 102,\r\n    \"criminalDetails\": \"No\",\r\n    \"incomeDetails\": \"300000\",\r\n    \"voterId\": 1002\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/candidate/updateCandidate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidate",
+								"updateCandidate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ParliamentCandidate",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"parliamentId\": 5002,\r\n    \"politicalParyId\": 202,\r\n    \"electionId\": 103,\r\n    \"criminalDetails\": \"No\",\r\n    \"incomeDetails\": \"250000\",\r\n    \"voterId\": 1004\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/parliamentCandidate/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliamentCandidate",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByParliament",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/parliamentCandidate/getCandidateByParliament/5001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliamentCandidate",
+								"getCandidateByParliament",
+								"5001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByParliamentAndElection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/parliamentCandidate/getCandidateByParliamentAndElection/5002/103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliamentCandidate",
+								"getCandidateByParliamentAndElection",
+								"5002",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByPoliticalParty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/parliamentCandidate/getCandidateByPoliticalParty/202",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliamentCandidate",
+								"getCandidateByPoliticalParty",
+								"202"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCandidateByPoliticalPartyAndElection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/parliamentCandidate/getCandidateByPoliticalPartyAndElection/202/103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliamentCandidate",
+								"getCandidateByPoliticalPartyAndElection",
+								"202",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCandidate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"candidateId\": 1,\r\n    \"parliamentId\": 5002,\r\n    \"politicalParyId\": 202,\r\n    \"electionId\": 103,\r\n    \"criminalDetails\": \"No\",\r\n    \"incomeDetails\": \"300000\",\r\n    \"voterId\": 1004\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/parliamentCandidate/updateCandidate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliamentCandidate",
+								"updateCandidate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parliament",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"parliamentName\": \"Mhada\", \r\n    \"state\": \"Maharashtra\",\r\n    \"district\": \"Solapur\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/parliament/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliament",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getParliamentById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/parliament/getById/5001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliament",
+								"getById",
+								"5001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllParliaments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/parliament",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliament"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getParliamentByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/parliament/getByName/Mhada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"parliament",
+								"getByName",
+								"Mhada"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Announcement",
+			"item": [
+				{
+					"name": "addAnnouncement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Announcement3\",\r\n    \"type\": \"Result\",\r\n    \"date\": \"2024-08-27\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/announcement/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"announcement",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAnnouncementsByType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/announcement/getByType/Election",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"announcement",
+								"getByType",
+								"Election"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8080/"
+		}
+	]
+}

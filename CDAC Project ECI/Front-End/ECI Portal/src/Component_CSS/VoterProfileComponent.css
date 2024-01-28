@@ -1,0 +1,127 @@
+.image-container {
+  float: right;
+}
+
+.main-div {
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: auto;
+}
+
+.heading {
+  width: 130px;
+  font-weight: bold;
+}
+
+.voter-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+/* .card-body {
+  padding: 0;
+}
+
+body.bg-light .ResultCard .card-body .d-flex .col {
+  margin-bottom: 10px;
+}
+body.bg-light .ResultCard .card-body .d-flex .col br {
+  display: none;
+}
+body.bg-light .ResultCard .card-body .d-flex .col:first-child:before {
+  content: "EPIC Number";
+  margin-right: 20px;
+  display: block;
+  font-weight: bold;
+}
+body.bg-light .ResultCard .card-body .d-flex .col:nth-child(2):before {
+  content: "Name";
+  margin-right: 20px;
+  display: block;
+  font-weight: bold;
+}
+body.bg-light .ResultCard .card-body .d-flex .col:nth-child(3):before {
+  content: "Age";
+  margin-right: 20px;
+  display: block;
+  font-weight: bold;
+}
+body.bg-light .ResultCard .card-body .d-flex .col:nth-child(4):before {
+  content: "Father's/ Husband's Name";
+  margin-right: 20px;
+  display: block;
+  font-weight: bold;
+}
+body.bg-light .ResultCard .card-body .d-flex .col:nth-child(5):before {
+  content: "District, State";
+  margin-right: 20px;
+  display: block;
+  font-weight: bold;
+}
+body.bg-light .ResultCard .card-body .d-flex .col:nth-child(6):before {
+  content: "Assembly Constituency";
+  margin-right: 20px;
+  display: block;
+}
+body.bg-light .ResultCard .card-body .d-flex .col:nth-child(7):before {
+  content: "Parliamentary Constituency";
+  margin-right: 20px;
+  display: block;
+  font-weight: bold;
+}
+body.bg-light .ResultCard .card-body .d-flex .mr-auto:before {
+  content: "Action";
+  margin-right: 20px;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+body.bg-light .ResultCard .card-body .d-flex .mr-auto {
+  width: 100%;
+}
+body.bg-light .ResultCard .card-body .d-flex .mr-auto a {
+  float: right;
+  margin-right: 30px !important;
+}
+
+.card-body.datashow {
+  padding: 0 14px;
+}
+
+.card.ResultCard.mb-5 .table.bordered td,
+.card.ResultCard.mb-5 .table.bordered th {
+  border: 1px solid #dee2e6;
+  font-size: 14px;
+}
+.card.ResultCard.mb-5 .table.bordered td:nth-child(even) {
+  width: 30%;
+  font-weight: 400;
+}
+
+.row.detailsepic table {
+  box-shadow: 0 0 8px 5px #d5d5d5;
+  background: #fff;
+}
+
+.row.detailsepic table td {
+  display: block !important;
+  border: transparent !important;
+  padding: 2px 12px !important;
+  width: 100% !important;
+}
+
+.row.detailsepic table td br {
+  display: none !important;
+}
+
+.rdocument ul {
+  margin: 0 0 20px !important;
+  display: table;
+}
+.rdocument ul li {
+  width: fit-content !important;
+  display: table-cell;
+} */
